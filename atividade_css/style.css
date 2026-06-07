@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+header{
+    background-image: linear-gradient( to left, #FAA912,  #e8e7d8 50%);
+    padding: 10px;
+    text-align: center;
+    height: 120px;
+}
+
+#logo-img{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+#logo-img:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+#logo h1{
+    font-size: 50px;
+    float: left;
+    margin: 25px 0px 0px 20px;
+    font-style: italic;
+}
+
+nav{
+    display: flex;
+    float: right;
+    margin-top: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.8s ;
+}
+
+nav a:hover{
+    color: #FAA912;
+    transform: scale(5.5);
+    background-color: white;
+    font-size: 22px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+#header-main{
+    background-color: rgb(255, 255, 255) ;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#header-main h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#header-main p{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+#proximos-eventos{
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    text-align: center;
+    padding: 30px;
+    margin:  auto;
+    border-radius: 10px;
+}
+
+#proximos-eventos > h3{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FAA912;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#proximos-eventos > p{
+    color: rgb(138, 138, 138);
+}
+
+.evento img{
+    width: 35%;
+    height: 35%;
+    margin: 20px;
+    border-radius: 10px;
+    float: left ;
+}
+
+.evento{
+    display: flex;
+    border: #FAA912 solid 2px;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.dados-evento{
+    margin-top: 10%;
+    text-align: justify;
+}
+
+.dados-evento h4{
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 10px 0px 20px 0px;
+}
+
+.dados-evento p{
+    margin: 10px 0px 10px 0px;
+}
+
+.evento:hover{
+    background-color: #FAA912;
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Página de Contato */
+
+#main-informacoes{
+    max-width: 800px;
+    margin: auto;
+    
+
+}
+
+#main-informacoes > h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FAA912;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#main-informacoes > p{
+    color: rgb(138, 138, 138);
+}
+
+#main-formulario{
+    max-width: 800px;
+    text-align: center;
+    padding: 30px;
+    margin:  auto;
+    border-radius: 10px;
+}
+
+#main-formulario > h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FAA912;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    margin: 10px 0px 5px 0px;
+    font-weight: bold;
+    text-align: left;
+    display: block; 
+}
+
+label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 500px
+}
+
+button {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin:5px;
+}
+
+button[type="submit"]:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+button[type="reset"]:hover {
+    background-color: #FAA912;
+    transform: scale(1.1);
+}
+
+/* Página de Cadastro */
+
+section:not(#proximos-eventos) {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin:  auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+section:not(#proximos-eventos) h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FAA912;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline;
+}
+
+
+
+/*Deixando com Responsividade */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+form input:not([type="checkbox"]),
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #logo-img,
+    #logo h1,
+    nav {
+        float: none;
+    }
+
+    #logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo h1 {
+        margin: 10px 0;
+        font-size: 40px;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .evento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evento img {
+        width: 90%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .dados-evento {
+        margin: 20px;
+        text-align: center;
+    }
+
+    #proximos-eventos,
+    #main-informacoes,
+    #main-formulario,
+    section:not(#proximos-eventos) {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Para celulares */
+@media (max-width: 480px) {
+
+    #logo h1 {
+        font-size: 30px;
+    }
+
+    #header-main h2,
+    #proximos-eventos > h3,
+    #main-formulario > h2,
+    #main-informacoes > h2,
+    section:not(#proximos-eventos) h2 {
+        font-size: 32px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+        font-size: 18px;
+    }
+
+    .dados-evento h4 {
+        font-size: 24px;
+    }
+}
